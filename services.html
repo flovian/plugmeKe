@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="custom.css">
+    <title>PlugmeKE</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">PlugmeKE</a></div>
+            <ul class="links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="join.html">Join now</a></li>
+            </ul>
+            <a href="index.html#signup" class="action_btn">Signup/In</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="join.html">Join now</a></li>
+            <li><a href="#" class="action_btn">Signup/In</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="services">
+            <h1>What Does PlugmeKE Do?</h1>
+            <div infop> 
+            <p>PlugMe KE is an innovative platform that connects users with reliable plugs for a wide range of products, including clothes, 
+                electronics, and more. Our goal is to make it easy for users to find the products they need while supporting small businesses. 
+                Searching for quality products can be a time-consuming and frustrating experience, especially for people who are new to an area. 
+                With so many different shops and sellers to choose from, it can be difficult to know where to start.  
+                PlugMe KE solves this problem by providing a central platform where users can find reliable plugs for different products. Our system 
+                allows plugs to sign up and create accounts, where they can specify the types of products they sell and the quality of their goods. 
+                By using PlugMe KE, users can save time and easily find quality products without having to spend hours searching. They can also connect 
+                with reliable plugs who will provide them with the products they need. Moreover, the platform supports small businesses, allowing them 
+                to reach a wider audience and grow their customer base.  
+                Join PlugMe KE today and experience the convenience of finding quality products with ease. Whether you're looking for clothes, electronics,
+                 or other items, our reliable plugs will provide you with the products you need.
+                </p>
+                </div>
+        </section>
+        <div class="wrapper">
+            <h1>Our Services</h1>
+            <p>Connect with nearby plugs to get the following services and many more in
+                 the shortest time possible</p>
+            <div class="content_box">
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-md"></i>
+                    <h2>Fashion and design</h2>
+                    <p>Upgrade your wardrobe and stay on trend with our plugs</p>
+                </div>
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-md"></i>
+                    <h2>Electronics</h2>
+                    <p>Get the latest gadgets/protect your devices with expert repair </p>
+                </div>
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-md"></i>
+                    <h2>Home Decor</h2>
+                    <p>Maximize your space with our decor</p>
+                </div>
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-md"></i>
+                    <h2>Greens and groceries</h2>
+                    <p>Upgrade your wardrobe and stay on trend with our plugs</p>
+                </div>
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-md"></i>
+                    <h2>Newborn & baby products</h2>
+                    <p>Stay stylish with our trendy baby clothing & accessories</p>
+                </div>
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-md"></i>
+                    <h2>Event planning</h2>
+                    <p>Get fresh & healthy produce with our grocery delivery services</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div> -->
+        <ul class="social_icons">
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="join.html">Join now</a></li>
+        </ul>
+        <p>@2023 Website  | All Rights Reseved</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isopen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isopen
+            ? 'fa-solid fa-bars'
+            : 'fa-solid fa-bars'
+        } 
+        
+    </script>
+</body>
+
+<!-- color  PINK code
+    #DF5D86 #E27090 #EBE892A9 #F1ABB9 #D14F7B
+    
+    PURPLE
+    #967BB6 #CCDCFD #BB8EFE #EBBFBB #F2ASEB #DO99E2 -->
+</html>
